@@ -197,13 +197,6 @@ The Corpus Builder uses FluCoMa to generate onset detection, MFCC, pitch, chroma
 
 ---
 
-## Citation
-
-If you use Somax2Collider in your research or artistic work, please cite:
-
-> Somax2Collider: A SuperCollider-Based Frontend for Co-Creative Improvisation with Spatial Agents. ICMC 2026.
-
----
 
 ## Acknowledgments
 
