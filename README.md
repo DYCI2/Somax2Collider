@@ -1,5 +1,7 @@
 # Somax2Collider
 
+<img width="3342" height="2146" alt="Somax2Collider2" src="https://github.com/user-attachments/assets/f5b67b29-c7ed-4340-a8d3-2ea54d335a55" />
+
 A SuperCollider-based frontend for co-creative improvisation with spatial agents, built on top of [Somax2](https://github.com/DYCI2/Somax2) — an AI-based multi-agent system for human–machine co-improvisation developed at [IRCAM](https://www.ircam.fr).
 
 ---
