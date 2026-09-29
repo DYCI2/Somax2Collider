@@ -59,24 +59,38 @@ Or install directly via SuperCollider Quarks (coming soon).
 ## Quick Start
 
 ```supercollider
-// 1. Create a Somax object
+// You can create agents and influencers directly from code or from the GUI.
+
+// 1. Create a Somax object (only once)
 ~somax = Somax.new;
 
-// 2. Launch the Somax2 Python server
+// 2. Open the main GUI window
+~somax.gui;
+
+// 3. Launch the Somax2 Python server
+// Alternatively, start it from the GUI
 ~somax.start;
 
-// 3. Start the server running
+// 4. Start running the server
+// Alternatively, run it from the GUI
 ~somax.run;
 
-// 4. Create agents with a corpus
-~somax.create_agent(\Agent_1, "MyAudioCorpus");
-~somax.create_agent(\Agent_2, "MyMidiCorpus");
+// 5. Set the corpus folder path
+// Alternatively, select the path from the GUI
+~somax.corpus_path(”/path-to-your-corpus-folder”);
 
-// 5. Create an audio influencer (input channel 0)
+// 6. Create agents with a corpus (corpus name without the file extension)
+~somax.create_agent(\Agent_1, “MyAudioCorpus”);
+~somax.create_agent(\Agent_2, “MyMidiCorpus”);
+
+// 7. Create audio influencers (input channels 0 and 1)
 ~somax.audio_influencer(\AudioInfluencer_0, \audioIn, 0);
+~somax.audio_influencer(\AudioInfluencer_1, \audioIn, 1);
 
-// 6. Open the main GUI window
-~somax.gui;
+// 8. Connect influencers to agents
+// Connections can also be made from the GUI
+~somax.connection(\AudioInfluencer_0, \Agent_1);
+~somax.connection(\AudioInfluencer_1, \Agent_2);
 ```
 
 ---
