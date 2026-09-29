@@ -198,6 +198,8 @@ The ambisonics distribution can be set per agent from the GUI or via OSC, enabli
 Build and analyze new corpora directly from SuperCollider:
 
 ```supercollider
+// Audio files can be in .wav or .aif format
+~somax.corpus_test_buider("MyFile.aif", peak_thresh: 0.1);
 ~somax.corpus_builder("MyFile.aif", peak_thresh: 0.1);
 ```
 
